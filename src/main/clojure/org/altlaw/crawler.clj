@@ -12,7 +12,7 @@
     (.. getParameters (add "followRedirects" "false"))))
 
 ;; Client is thread-safe.
-(def *http-client*
+(def #^{:private true} *http-client*
      (delay (doto (Client. Protocol/HTTP)
               (.setContext (crawler-client-context)))))
 
