@@ -1,0 +1,3 @@
+(ns namespace)
+
+;; (defn ...
